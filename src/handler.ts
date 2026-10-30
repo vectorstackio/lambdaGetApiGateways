@@ -46,8 +46,8 @@ export const handler = async () => {
         v2Apis
       })
     }
-  } catch (err) {
-    console.error('Failed to list API Gateways:', err)
+  } catch {
+    console.error('Failed to list API Gateways')
 
     return {
       statusCode: 500,
